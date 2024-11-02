@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/just-bananas-fe/browser",
+    "public": "dist",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
       {

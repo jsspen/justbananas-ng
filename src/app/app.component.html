@@ -15,14 +15,14 @@
       <!-- Items will be dynamically added here -->
     </tbody>
   </table>
-  <form id="item-form">
+  <form id="item-form" (submit)="addItem($event)">
     <input type="text" id="item-name" placeholder="Item Name" required />
     <input type="number" id="quantity" placeholder="Quantity" required />
     <input type="text" id="store" placeholder="Store" />
     <input type="text" id="notes" placeholder="Notes" />
-    <button type="submit">Add Item</button>
+    <button type="submit">Add</button>
   </form>
-  <button id="clear-completed">Clear Completed Items</button>
+  <button id="clear-completed">Clear Completed</button>
   <div id="filters">
     <label for="store-filter">Filter by Store:</label>
     <select id="store-filter">
